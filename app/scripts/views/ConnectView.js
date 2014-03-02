@@ -22,6 +22,7 @@ define([
 
         readURL : function(ev){
         	var value = ev.currentTarget.value;
+            this.model.set('connectUrl', value);
         },
 
         refreshOptions: function(ev){

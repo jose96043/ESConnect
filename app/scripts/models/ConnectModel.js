@@ -6,10 +6,11 @@ define([
 ], function (_, Backbone) {
     'use strict';
 
-    var ConnectmodelModel = Backbone.Model.extend({
+    var ConnectModel = Backbone.Model.extend({
         defaults: {
+        	connectUrl: "localhost:9200"
         }
     });
 
-    return ConnectmodelModel;
+    return ConnectModel;
 });
