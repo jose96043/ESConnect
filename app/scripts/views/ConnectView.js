@@ -33,7 +33,16 @@ define([
         },	
 
         connectToCluster: function(){
-        	
+            var composedURL = this.model.get('connectUrl')+this.model.get('clusterState');
+            Backbone.history.navigate('connect/'+btoa(composedURL), true);
+            console.log(composedURL);
+         //    this.model.url = composedURL;
+        	// this.model.fetch().done(function(data){
+         //        console.log(data.nodes);
+         //        var dataEncode =  btoa(JSON.stringify(data.nodes));
+         //        Backbone.history.navigate('connect/'+dataEncode, true);
+         //        // console.log('cluster state', btoa(data.nodes));
+         //    });
         },
 
         render: function(){

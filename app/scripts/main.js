@@ -1,6 +1,5 @@
 /*global require*/
 'use strict';
-
 require.config({
     shim: {
         underscore: {
@@ -40,5 +39,4 @@ require([
     };
     var route = new Router();
     Backbone.history.start();
-
 });

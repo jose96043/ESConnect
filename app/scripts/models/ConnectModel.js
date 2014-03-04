@@ -8,7 +8,8 @@ define([
 
     var ConnectModel = Backbone.Model.extend({
         defaults: {
-        	connectUrl: "localhost:9200"
+        	connectUrl: "http://localhost:9200",
+        	clusterState: "/_cluster/state"
         }
     });
 

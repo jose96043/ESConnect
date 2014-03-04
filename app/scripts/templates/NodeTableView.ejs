@@ -1,0 +1,15 @@
+<table class="table table-bordered table-hover">
+  <tr>
+  	<th>Id</th>
+  	<th>Node Name</th>
+  	<th>Action</th>
+  </tr>
+<% _.each(nodes, function(node, id){ %>
+	 <tr>
+		 <td> <%= id %> </td>
+		 <td> <%= node.name %> </td>
+		 <td></td>
+	 </tr>
+<% }) %>
+
+
